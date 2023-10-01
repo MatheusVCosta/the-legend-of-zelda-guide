@@ -19,7 +19,7 @@ export default {
                 "Characters",
                 "Monsters",
                 "Bosses",
-                "Dugens",
+                "Dungeons",
                 "Places",
                 "Items"
             ]
@@ -27,8 +27,8 @@ export default {
     },
     methods: {
         menuSelected(i) {
-            const optionMenu = this.itemsMenu[i]
-            console.log(optionMenu)
+            const optionMenu = this.itemsMenu[i].toLowerCase()
+            this.$emit('optionMenu', optionMenu)
         }
     }
 }
