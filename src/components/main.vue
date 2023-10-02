@@ -1,9 +1,9 @@
 <template >
     <dic class="main">
-        <h1>The legend zelda guide</h1>
+        <h1>The legend of zelda guide</h1>
         <p id="title">{{ title }}</p>
         <div class="container">
-            <Item v-for="(data, i) in data" :key="i" :item="data"></Item>
+            <Item v-for="(data, i) in data" :key="i" :item="data" :title="title"></Item>
         </div>
     </dic>
 </template>
@@ -35,11 +35,12 @@ export default {
         font-size: 40px;
     }
     .container {
-        width:80vw;
+        width:90vw;
+        max-width: 2000px;
         border-radius: 15px;
         display: flex;
         flex-flow: row wrap;
-        justify-content: left;
+        justify-content: center;
         margin-bottom: 100px;
 
     }
