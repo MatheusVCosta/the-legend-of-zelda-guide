@@ -15,8 +15,21 @@ export default {
                 {name : "The Legend of Zelda", folder: "the-legend-of-zelda-nes", file: "capa.png"},
                 {name : "The Legend of Zelda: A Link to the Past", folder: "tloz-a-link-to-the-past", file: "capa.jpg"},
                 {name : "The Legend of Zelda: Ocarina of Time", folder: "tloz-ocarina-of-time", file: "capa.jpg"},
-                {name : "The Legend of Zelda: Oracle of Ages", folder: "tloz-oracle-of-age", file: "capa.jpg"} 
-            ]
+                {name : "The Legend of Zelda: Oracle of Ages", folder: "tloz-oracle-of-age", file: "capa.jpg"}, 
+                {name : "The Legend of Zelda: Link's Awakening DX", folder: "tloz-link's-awakening-dx", file: "capa.jpg"},
+                {name : "The Legend of Zelda: Majora's Mask", folder: "tloz-majora's-mask", file: "capa.png"},
+                {name : "Zelda II: The Adventure of Link", folder: "tloz-the-adventure-of-link", file: "capa.jpg"},
+                {name : "The Legend of Zelda: The Wind Waker", folder: "tloz-the-wind-waker", file: "capa.jpg"},
+                //Characters
+                {name : "Anjean", folder: "tloz", file: "anjean.png"},
+                {name : "Animal Companion", folder: "tloz", file: "animalcompanion.png"},
+                {name : "Ancient Oven", folder: "tloz", file: "ancientoven.png"},
+                {name : "Angler Fish", folder: "tloz", file: "anglefish.png"},
+                {name : "Captain Krin", folder: "tloz", file: "captainkrin.jpg"},
+                {name : "Cara", folder: "tloz", file: "cara.jpg"},
+                {name : "Anche", folder: "tloz", file: "Anche.jpg"},
+                {name : "Carben", folder: "tloz", file: "carben.png"},
+            ],
         }
     },
     props: ['item', 'title'],
@@ -54,8 +67,7 @@ export default {
         height: 350px;
         margin: 50px 30px;
 
-        /* background-color: red; */
-        border: 3px solid #d4ce46;
+        box-shadow:0px 0px 5px 0px rgba(0,0,0,0.75);
         border-radius: 15px;
 
         display: flex;

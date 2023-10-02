@@ -21,17 +21,19 @@ export default {
   methods: {
     getItemByType(itemName) {
       this.itemName = itemName
-      this.axios.get(itemName).then(res => {
+      this.axios.get(itemName + "?limit=8").then(res => {
         this.data = res.data.data
+        console.log(res.data.count)
       })
+      
     },
   },
-  // created() {
-  //     this.axios.get(this.itemName).then(res => {
-  //       this.data = res.data.data
-  //     })
-  //     console.log(this.data)
-  //   }
+  created() {
+      this.axios.get(this.itemName + "?limit=8").then(res => {
+        this.data = res.data.data
+      })
+      console.log(this.data)
+    }
 
 }
 </script>
