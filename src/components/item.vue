@@ -67,7 +67,8 @@ export default {
         height: 350px;
         margin: 50px 30px;
 
-        box-shadow:0px 0px 5px 0px rgba(0,0,0,0.75);
+        background-color: #6f6c30;
+        box-shadow: 8px 9px 7px 2px rgba(0,0,0,0.75);
         border-radius: 15px;
 
         display: flex;
